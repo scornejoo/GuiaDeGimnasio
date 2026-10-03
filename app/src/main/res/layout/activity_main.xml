@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:layout_marginTop="24dp"
+    android:padding="24dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:gravity="center"
+        android:text="Guía de Gimnasios"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Elige un gimnasio para ver su detalle"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnGimnasio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Power Fit Center"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnGimnasio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iron Zone Gym"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnGimnasio3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vida Activa"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnAjustes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajustes"
+        android:layout_marginTop="32dp"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
