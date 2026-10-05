@@ -8,23 +8,23 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
-import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContract;
+
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 
 public class FormActivity extends AppCompatActivity {
 
-
-    TextView tvTituloForm;
     TextView tvGimnasioForm;
     EditText etNombre;
     EditText etCorreo;
     EditText etTelefono;
     Button btnEnviar;
+
+    Toolbar toolbar;
 
 
     ActivityResultLauncher<Intent> LauncherConfirm = registerForActivityResult(
@@ -46,9 +46,13 @@ public class FormActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        tvTituloForm = findViewById(R.id.tvTituloForm);
+        toolbar = findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Inscripción");
+
         tvGimnasioForm = findViewById(R.id.tvGimnasioForm);
         etNombre = findViewById(R.id.etNombre);
         etCorreo = findViewById(R.id.etCorreo);
