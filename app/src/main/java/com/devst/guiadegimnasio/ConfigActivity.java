@@ -7,15 +7,17 @@ import android.provider.Settings;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 
 public class ConfigActivity extends AppCompatActivity {
 
-    TextView tvTituloConfig;
+
     TextView tvInfoConfig;
     Button btnWifi;
+    Toolbar toolbar;
 
 
 
@@ -23,9 +25,13 @@ public class ConfigActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_config);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        tvTituloConfig = findViewById(R.id.tvTituloConfig);
+        toolbar = findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Ajustes");
+
         tvInfoConfig = findViewById(R.id.tvInfoConfig);
         btnWifi = findViewById(R.id.btnWifi);
 

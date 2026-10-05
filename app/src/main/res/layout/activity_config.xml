@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:layout_marginTop="100dp">
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/tvTituloConfig"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ajustes"
-        android:textStyle="bold"
-        android:textSize="32sp"
-        android:gravity="center_horizontal"
-        />
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Ajustes"
+        app:titleTextColor="@color/white"/>
 
-    <TextView
-        android:id="@+id/tvInfoConfig"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Desde aquí puedes abrir los ajustes de Wi-Fi del dispositivo"
-        android:textSize="18sp"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="30dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <Button
-        android:id="@+id/btnWifi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Abrir ajustes de Wi-Fi"
-        android:layout_marginTop="20dp"
-        />
+        <TextView
+            android:id="@+id/tvInfoConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desde aquí puedes abrir los ajustes de Wi-Fi del dispositivo"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/btnWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir ajustes de Wi-Fi"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
