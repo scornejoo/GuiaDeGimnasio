@@ -28,7 +28,8 @@
         <activity
             android:name=".ConfigActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".FormActivity"
             android:exported="false"
@@ -36,7 +37,7 @@
         <activity
             android:name=".ConfirmActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize"/>
     </application>
 
 </manifest>
