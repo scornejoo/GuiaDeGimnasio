@@ -33,7 +33,7 @@
         <activity
             android:name=".FormActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".ConfirmActivity"
             android:exported="false"
