@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="24dp"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Guía de Gimnasios"
+        android:textColor="@color/texto"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Elige un gimnasio para ver su detalle"
+        android:textColor="@color/texto"
+        android:textSize="18sp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="48dp"
+        />
+
+    <Button
+        android:id="@+id/btnGimnasio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💪🏾 Power Fit Center"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnGimnasio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🦾 Iron Zone Gym"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnGimnasio3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="❤️‍🩹 Vida Activa"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnAjustes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Ajustes"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

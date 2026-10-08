@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Ajustes"
+        app:titleTextColor="?attr/colorOnPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvInfoConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desde aquí puedes abrir los ajustes de Wi-Fi del dispositivo"
+            android:textColor="@color/texto"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="200dp"/>
+
+        <Button
+            android:id="@+id/btnWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛜 Abrir ajustes de Wi-Fi"
+            android:textStyle="bold"
+            android:textColor="@color/texto"
+            android:layout_marginTop="80dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

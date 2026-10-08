@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Inscripción"
+        app:titleTextColor="?attr/colorOnPrimary"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvGimnasioForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gimnasio"
+            android:textColor="@color/texto"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_margin="12dp"/>
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Completo"
+            android:inputType="textPersonName"
+            android:textColor="@color/texto"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/texto"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono (9 Dígitos)"
+            android:inputType="phone"
+            android:textColor="@color/texto"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📩 Enviar Inscripción"
+            android:textStyle="bold"
+            android:textColor="@color/texto"
+            android:layout_marginTop="18dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

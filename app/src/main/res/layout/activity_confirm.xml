@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvTituloConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Confirmar inscripción"
+        android:textColor="@color/texto"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tvGimnasioConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gimnasio"
+        android:textColor="@color/texto"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tvNombreConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="@color/texto"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvCorreoConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Correo"
+        android:textColor="@color/texto"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvTelefonoConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teléfono"
+        android:textColor="@color/texto"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👍🏾 Confirmar"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👎🏾 Cancelar"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginTop="12dp"/>
+
+
+
+
+</LinearLayout>
