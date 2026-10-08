@@ -1,3 +1,64 @@
 <resources>
+    <!-- Nombre de la aplicación -->
     <string name="app_name">GuiaDeGimnasio</string>
+
+    <!-- Textos para ConfirmActivity -->
+    <string name="confirm_gimnasio">Gimnasio: %1$s</string>
+    <string name="confirm_nombre">Nombre: %1$s</string>
+    <string name="confirm_correo">Correo: %1$s</string>
+    <string name="confirm_telefono">Teléfono: %1$s</string>
+
+    <!-- Alertas y Errores para DetalleActivity -->
+    <string name="error_gimnasio_desconocido">Gimnasio Desconocido</string>
+    <string name="error_sin_datos">No se pudo cargar la información de este gimnasio.</string>
+    <string name="toast_error_mapa">No hay ninguna aplicación instalada que pueda mostrar el mapa</string>
+    <string name="toast_error_web">No hay ninguna aplicación que pueda abrir esta página web</string>
+    <string name="toast_error_llamada">No hay ninguna aplicación para realizar llamadas en este teléfono</string>
+    <string name="toast_error_correo">No hay ninguna aplicación de correo electrónico instalada</string>
+
+    <!-- Componentes de Correo para DetalleActivity -->
+    <string name="correo_asunto">Consulta de inscripción</string>
+    <string name="correo_cuerpo">Hola, quisiera más información sobre sus planes.</string>
+
+    <!-- Textos de Gimnasios para DetalleActivity -->
+    <string name="gym1_nombre">Power Fit Center</string>
+    <string name="gym1_desc">Musculación y pesas libres</string>
+    <string name="gym1_horario">Lunes - Viernes 06:00-22:00</string>
+    <string name="gym1_direccion">Av. Providencia 1234, Santiago</string>
+
+    <string name="gym2_nombre">Iron Zone Gym</string>
+    <string name="gym2_desc">Crossfit y entrenamiento funcional</string>
+    <string name="gym2_horario">Lunes - Viernes 06:00-22:00</string>
+    <string name="gym2_direccion">Av. Departamental 987, Santiago</string>
+
+    <string name="gym3_nombre">Vida Activa</string>
+    <string name="gym3_desc">Mueve tu cuerpo - Elige sano</string>
+    <string name="gym3_horario">Lunes - Viernes 08:00-20:00</string>
+    <string name="gym3_direccion">Av. Lautaro 495, Santiago</string>
+
+    <!-- Validaciones para FormActivity -->
+    <string name="error_nombre_vacio">Ingresa tu Nombre</string>
+    <string name="error_correo_vacio">El correo no puede estar vacío</string>
+    <string name="error_correo_invalido_2">Usa un correo que termine en @gmail.com</string>
+    <string name="error_telefono_vacio">Ingresa tu número de teléfono</string>
+    <string name="error_telefono_digitos">Debe tener exactamente 9 dígitos y comenzar con "9"</string>
+    <string name="error_nombre_invalido">Use solo letras (mínimo 3)</string>
+
+    
+    
+    
+    
+    <!-- Mensajes de confirmación y cancelación (Resultados del Launcher) -->
+    <string name="toast_inscripcion_confirmada">Inscripción confirmada</string>
+    <string name="toast_inscripcion_cancelada">Inscripción cancelada</string>
+
+    <!-- Textos para ConfigActivity y MainActivity -->
+    <string name="titulo_ajustes">Ajustes</string>
+    <string name="titulo_inscripcion">Inscripción</string>
+    <string name="toast_error_wifi">No se pueden abrir los ajustes de Wi-Fi</string>
+
+
+
+
+
 </resources>

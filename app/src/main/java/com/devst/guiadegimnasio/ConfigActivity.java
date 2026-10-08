@@ -8,18 +8,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-
 public class ConfigActivity extends AppCompatActivity {
-
-
     TextView tvInfoConfig;
     Button btnWifi;
     Toolbar toolbar;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +21,13 @@ public class ConfigActivity extends AppCompatActivity {
         setContentView(R.layout.activity_config);
 
         toolbar = findViewById(R.id.toolbar);
-
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Ajustes");
+
+        // CORRECCIÓN: Validación de nulos y uso de recurso de strings para el título
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setTitle(getString(R.string.titulo_ajustes));
+        }
 
         tvInfoConfig = findViewById(R.id.tvInfoConfig);
         btnWifi = findViewById(R.id.btnWifi);
@@ -44,10 +41,15 @@ public class ConfigActivity extends AppCompatActivity {
             }
             catch (ActivityNotFoundException e)
             {
-                Toast.makeText(this, "No se pueden abrir los ajustes de Wi-Fi", Toast.LENGTH_SHORT).show();
+                // CORRECCIÓN: Toast migrado a recursos string
+                Toast.makeText(this, getString(R.string.toast_error_wifi), Toast.LENGTH_SHORT).show();
             }
-
         });
+    }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

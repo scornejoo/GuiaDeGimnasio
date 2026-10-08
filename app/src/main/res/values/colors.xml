@@ -7,4 +7,24 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--  fondo de pantalla  -->
+    <color name="Fondo">#121212</color>
+
+    <!--  tarjetas y campos  -->
+    <color name="superficie">#2A2A2A</color>
+
+    <!--  barra y botones  -->
+    <color name="primario">#FF6D00</color>
+
+    <!--  barra de estado  -->
+    <color name="primarioOscuro">#e65100</color>
+
+    <!--  texto principal  -->
+    <color name="texto">#FFFFFF</color>
+
+    <!--  texto secundario  -->
+    <color name="textoSuave">#B0B0B0</color>
+    
+    
 </resources>

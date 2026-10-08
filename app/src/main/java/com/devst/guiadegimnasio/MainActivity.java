@@ -5,34 +5,30 @@ import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 public class MainActivity extends AppCompatActivity {
-
-// Declaracion de Variables
-
+    // Declaración de Variables
     Button btnGimnasio1;
     Button btnGimnasio2;
     Button btnGimnasio3;
     Button btnAjustes;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        Conectar con los Layout
-
+        // Conectar con los Layout
         btnGimnasio1 = findViewById(R.id.btnGimnasio1);
         btnGimnasio2 = findViewById(R.id.btnGimnasio2);
         btnGimnasio3 = findViewById(R.id.btnGimnasio3);
         btnAjustes = findViewById(R.id.btnAjustes);
 
+        // Clis de navegación optimizados con referencias explícitas de contexto
         btnGimnasio1.setOnClickListener(v ->
         {
-        Intent intent = new Intent(MainActivity.this, DetalleActivity.class);
-        intent.putExtra("gimnasio", 1);
-        startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, DetalleActivity.class);
+            intent.putExtra("gimnasio", 1);
+            startActivity(intent);
         });
 
         btnGimnasio2.setOnClickListener(v ->
@@ -54,14 +50,5 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ConfigActivity.class);
             startActivity(intent);
         });
-
-
-
-
-
-
-
-
-
     }
 }

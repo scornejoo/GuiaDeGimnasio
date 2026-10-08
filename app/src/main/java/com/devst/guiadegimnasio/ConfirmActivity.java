@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 
 public class ConfirmActivity extends AppCompatActivity {
 
@@ -30,15 +30,27 @@ public class ConfirmActivity extends AppCompatActivity {
         btnConfirmar = findViewById(R.id.btnConfirmar);
         btnCancelar = findViewById(R.id.btnCancelar);
 
-        String gimnasio = getIntent().getStringExtra("gimnasio");
-        String nombre = getIntent().getStringExtra("nombre");
-        String correo = getIntent().getStringExtra("correo");
-        String telefono = getIntent().getStringExtra("telefono");
+        // Obtener los extras validando que el Intent no sea nulo
+        Intent intentIn = getIntent();
+        String gimnasio = "No especificado";
+        String nombre = "No especificado";
+        String correo = "No especificado";
+        String telefono = "No especificado";
 
-        tvGimnasioConfirm.setText("Gimnasio: " + gimnasio);
-        tvNombreConfirm.setText("Nombre: " + nombre);
-        tvCorreoConfirm.setText("Correo: " + correo);
-        tvTelefonoConfirm.setText("Telefono: " + telefono);
+        if (intentIn != null)
+        {
+            if (intentIn.hasExtra("gimnasio")) gimnasio = intentIn.getStringExtra("gimnasio");
+            if (intentIn.hasExtra("nombre")) nombre = intentIn.getStringExtra("nombre");
+            if (intentIn.hasExtra("correo")) correo = intentIn.getStringExtra("correo");
+            if (intentIn.hasExtra("telefono")) telefono = intentIn.getStringExtra("telefono");
+        }
+
+// Asignar los textos de forma segura
+        tvGimnasioConfirm.setText(getString(R.string.confirm_gimnasio, gimnasio));
+        tvNombreConfirm.setText(getString(R.string.confirm_nombre, nombre));
+        tvCorreoConfirm.setText(getString(R.string.confirm_correo, correo));
+        tvTelefonoConfirm.setText(getString(R.string.confirm_telefono, telefono));
+
 
         btnConfirmar.setOnClickListener(v ->
         {

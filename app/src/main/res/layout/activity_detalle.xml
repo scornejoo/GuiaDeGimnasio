@@ -3,16 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="60dp"
     android:padding="24dp">
 
     <TextView
         android:id="@+id/tvNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="24dp"
         android:gravity="center_horizontal"
         android:text="Power Fit Center"
+        android:textColor="@color/texto"
         android:textSize="24sp"
         android:textStyle="bold"
         />
@@ -22,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Descripcion"
-        android:gravity="center_horizontal"
+        android:textColor="@color/texto"
         android:textSize="16sp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="12dp"
@@ -33,6 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Horario"
+        android:textColor="@color/texto"
         android:textSize="16sp"
         android:layout_marginBottom="12dp"
         />
@@ -42,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Direccion"
+        android:textColor="@color/texto"
         android:textSize="16sp"
         android:layout_marginBottom="12dp"
         />
@@ -51,6 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Telefono"
+        android:textColor="@color/texto"
         android:textSize="16sp"
         android:layout_marginBottom="12dp"
         />
@@ -60,6 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Correo"
+        android:textColor="@color/texto"
         android:textSize="16sp"
         android:layout_marginBottom="12dp"
         />
@@ -69,15 +74,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sitio Web"
+        android:textColor="@color/texto"
         android:textSize="16sp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="24dp"
         />
 
     <Button
         android:id="@+id/btnMapa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver en Mapas"
+        android:text="📍Ver en Mapa"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
         android:textSize="12sp"
         android:layout_marginTop="8dp"
         />
@@ -86,7 +94,9 @@
         android:id="@+id/btnWeb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Abrir en sitio web"
+        android:textStyle="bold"
+        android:text="💻 Abrir en sitio web"
+        android:textColor="@color/texto"
         android:textSize="12sp"
         android:layout_marginTop="8dp"
         />
@@ -95,7 +105,9 @@
         android:id="@+id/btnLlamar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Llamar"
+        android:text="📞 Llamar"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
         android:textSize="12sp"
         android:layout_marginTop="8dp"
         />
@@ -104,7 +116,9 @@
         android:id="@+id/btnCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enviar correo"
+        android:text="✉️ Enviar correo"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
         android:textSize="12sp"
         android:layout_marginTop="8dp"
         />
@@ -113,7 +127,9 @@
         android:id="@+id/btnInscribirme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Inscribirme"
+        android:text="🖊️ Inscribirme"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
         android:textSize="12sp"
         android:layout_marginTop="8dp"
         />
